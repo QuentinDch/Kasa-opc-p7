@@ -1,17 +1,20 @@
 @import "../mixins.scss";
 
 .banner {
-  width: 1250px;
-  height: 230px;
-  border-radius: 25px;
+  border-radius: 20px;
   overflow: hidden;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-image: url("/src/assets/imgBannerPng.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: auto;
   @include flex-center;
+  min-height: 223px;
+
+  @media screen and (max-width: 767px) {
+    min-height: 111px;
+    border-radius: 10px;
+  }
 }
 
 .banner::before {
@@ -29,4 +32,21 @@
   color: var(--color-white);
   position: relative;
   z-index: 1;
+  user-select: none;
+  padding-inline: 1rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 377px) {
+    margin-right: auto;
+  }
+}
+
+.banner h1 > span {
+  @media screen and (max-width: 377px) {
+    display: block;
+    margin-right: auto;
+  }
 }

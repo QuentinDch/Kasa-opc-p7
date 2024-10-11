@@ -1,13 +1,16 @@
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Banner from "./components/banner";
+import "./main.scss";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <Header />
+    <div className="App">
+      <Navbar />
       <Banner />
       <Footer />
     </div>
   );
 }
+
+export default App;

@@ -1,11 +1,12 @@
-import "../sass/components/header.scss";
+import "../sass/components/Navbar.scss";
+import logo from "../assets/logoKasaSvg.svg";
 
-const Header = () => {
+const Navbar = () => {
   return (
-    <header className="header">
+    <header>
       <nav className="navbar">
         <a href="/src/index.html" className="navbar__logo" aria-current="page">
-          <img src="/src/assets/logoKasaSvg.svg" alt="Logo Kasa" />
+          <img src={logo} alt="Logo Kasa" />
         </a>
         <div className="navbar__links-wrapper">
           <a href="/src/index.html" aria-current="page" className="active">
@@ -18,4 +19,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

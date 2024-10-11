@@ -1,9 +1,10 @@
-import "../sass/components/footer.scss";
+import "../sass/components/Footer.scss";
+import logoFooter from "../assets/logoKasaWhiteSvg.svg";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src="/src/assets/logoKasaWhiteSvg.svg" alt="Logo Kasa" />
+      <img src={logoFooter} alt="Logo Kasa" />
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );

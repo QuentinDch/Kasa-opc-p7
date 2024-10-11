@@ -22,4 +22,10 @@
   font-weight: 500;
   line-height: 34.22px;
   color: var(--color-white);
+  user-select: none;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
 }
