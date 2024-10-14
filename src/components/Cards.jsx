@@ -1,7 +1,7 @@
 import "../sass/components/Cards.scss";
 import data from "../data/logements.json";
 
-function Cards() {
+const Cards = () => {
   return (
     <div className="grid">
       {data.map((card) => (
@@ -16,6 +16,6 @@ function Cards() {
       ))}
     </div>
   );
-}
+};
 
 export default Cards;

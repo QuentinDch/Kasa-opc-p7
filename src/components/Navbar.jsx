@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import "../sass/components/Navbar.scss";
 import logo from "../assets/logoKasaSvg.svg";
 
@@ -5,14 +6,22 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <a href="/src/index.html" className="navbar__logo" aria-current="page">
+        <Link to="/" className="navbar__logo" aria-current="page">
           <img src={logo} alt="Logo Kasa" />
-        </a>
+        </Link>
         <div className="navbar__links-wrapper">
-          <a href="/src/index.html" aria-current="page" className="active">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Accueil
-          </a>
-          <a href="#">À Propos</a>
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            À Propos
+          </NavLink>
         </div>
       </nav>
     </header>
