@@ -1,9 +1,12 @@
+@import "../mixins.scss";
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  @include flex-betwenn;
+  padding-block: 3rem;
+
+  @media screen and (max-width: 767px) {
+    padding-block: 1.5rem;
+  }
 
   &__logo {
     height: 68px;
@@ -35,8 +38,4 @@
       text-transform: uppercase;
     }
   }
-}
-
-.active {
-  text-decoration: underline;
 }

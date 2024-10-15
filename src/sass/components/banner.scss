@@ -4,10 +4,6 @@
   border-radius: 25px;
   overflow: hidden;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-image: url("/src/assets/imgBannerPng.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   @include flex-center;
   min-height: 223px;
 
@@ -17,12 +13,17 @@
   }
 }
 
-.banner::before {
+.overlay {
   content: "";
   display: block;
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.banner img {
+  position: absolute;
 }
 
 .banner h1 {
@@ -31,7 +32,7 @@
   line-height: 68.45px;
   color: var(--color-white);
   position: relative;
-  z-index: 1;
+  z-index: 10;
   user-select: none;
   padding-inline: 1rem;
 
@@ -40,13 +41,6 @@
     line-height: 24px;
   }
   @media screen and (max-width: 377px) {
-    margin-right: auto;
-  }
-}
-
-.banner h1 > span {
-  @media screen and (max-width: 377px) {
-    display: block;
     margin-right: auto;
   }
 }

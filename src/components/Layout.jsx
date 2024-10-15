@@ -1,14 +1,16 @@
+// Layout.jsx
 import { Fragment } from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-const About = () => {
+const Layout = ({ children }) => {
   return (
     <Fragment>
       <Navbar />
+      {children}
       <Footer />
     </Fragment>
   );
 };
 
-export default About;
+export default Layout;

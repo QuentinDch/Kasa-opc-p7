@@ -17,6 +17,11 @@
 #root {
   max-width: 1440px;
   margin: 0 auto;
+  padding-inline: 3rem;
+
+  @media screen and (max-width: 767px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 ul,
@@ -29,6 +34,7 @@ a {
   color: inherit;
   text-decoration: inherit;
   background-color: transparent;
+  text-underline-offset: 6px;
 }
 
 body {

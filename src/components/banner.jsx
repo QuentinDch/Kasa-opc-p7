@@ -1,11 +1,11 @@
 import "../sass/components/Banner.scss";
 
-const Banner = () => {
+const Banner = ({ image, title, overlay }) => {
   return (
     <div className="banner">
-      <h1>
-        <span>Chez vous,</span> partout et ailleurs
-      </h1>
+      <img src={image} alt="wild landscape" />
+      {overlay && <div className="overlay"></div>}
+      {title && <h1>{title}</h1>}
     </div>
   );
 };
