@@ -1,5 +1,5 @@
 import data from "../../data/logements.json";
-import "../../sass/components/Display.scss";
+import "../../sass/pages/Home/Display.scss";
 import Card from "./Card";
 
 const Display = () => {

@@ -1,4 +1,4 @@
-import "../../sass/components/Card.scss";
+import "../../sass/pages/Home/Card.scss";
 
 const Card = ({ cover, title }) => {
   return (

@@ -1,0 +1,12 @@
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-inline: 3rem;
+  margin-block: 3rem;
+
+  @media screen and (max-width: 767px) {
+    gap: 20px;
+    padding: 0;
+  }
+}
