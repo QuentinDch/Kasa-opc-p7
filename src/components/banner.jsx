@@ -1,9 +1,7 @@
-import "../sass/components/Banner.scss";
-
 const Banner = ({ image, title, overlay }) => {
   return (
     <div className="banner">
-      <img src={image} alt="wild landscape" />
+      <img src={image} alt="wild landscape" loading="lazy" />
       {overlay && <div className="overlay"></div>}
       {title && <h1>{title}</h1>}
     </div>

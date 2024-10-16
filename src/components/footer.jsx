@@ -1,4 +1,3 @@
-import "../sass/components/Footer.scss";
 import logoFooter from "../assets/logoKasaWhiteSvg.svg";
 
 const Footer = () => {

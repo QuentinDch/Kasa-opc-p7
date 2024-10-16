@@ -1,5 +1,3 @@
-import "../../sass/pages/Home/Card.scss";
-
 const Card = ({ cover, title }) => {
   return (
     <article className="card">

@@ -17,11 +17,6 @@
 #root {
   max-width: 1440px;
   margin: 0 auto;
-  padding-inline: 3rem;
-
-  @media screen and (max-width: 767px) {
-    padding-inline: 1.25rem;
-  }
 }
 
 ul,
@@ -42,6 +37,15 @@ body {
   min-height: 100vh;
   font-family: $font-stack;
   font-size: $base-font-size;
+}
+
+header,
+main {
+  padding-inline: 3rem;
+
+  @media screen and (max-width: 767px) {
+    padding-inline: 1.25rem;
+  }
 }
 
 button,

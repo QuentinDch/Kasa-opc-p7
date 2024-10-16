@@ -1,7 +1,7 @@
-@import "./sass/reset.scss";
-@import "./sass/mixins.scss";
-@import "./sass/variables.scss";
-@import "./sass/utilities.scss";
+@import "./sass/globals/mixins.scss";
+@import "./sass/globals/reset.scss";
+@import "./sass/globals/utilities.scss";
+@import "./sass/globals/variables.scss";
 
 @import "./sass/components/Banner.scss";
 @import "./sass/components/Footer.scss";

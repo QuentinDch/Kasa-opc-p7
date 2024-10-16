@@ -1,6 +1,5 @@
-import "../../sass/components/Main.scss";
 import Banner from "../../components/Banner";
-import bannerImg from "../../assets/imgBannerAboutPng.png";
+import bannerImg from "../../assets/imgBannerAboutWebP.webp";
 import Display from "./Display";
 
 const Main = () => {
