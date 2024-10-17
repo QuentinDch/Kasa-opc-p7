@@ -3,7 +3,7 @@ const Card = ({ cover, title }) => {
     <article className="card">
       <a href="#" aria-label={`Voir les détails de ${title}`}>
         <figure className="card-figure">
-          <img src={cover} alt={title} />
+          <img src={cover} alt={title} loading="lazy" />
           <figcaption>{title}</figcaption>
         </figure>
       </a>

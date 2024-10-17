@@ -1,0 +1,61 @@
+details {
+  width: 100%;
+  color: var(--color-white);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34.22px;
+  overflow: hidden;
+  user-select: none;
+
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+    line-height: 18.54px;
+  }
+}
+
+details summary {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-red);
+  border-radius: 5px;
+  list-style: none;
+  transition: background 250ms ease;
+  position: relative;
+  cursor: pointer;
+}
+
+details summary:hover {
+  background-color: darken($color: #ff6060, $amount: 2.5);
+}
+
+details summary::after {
+  content: "\f077";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+  display: inline-block;
+  transition: transform 250ms ease-out;
+}
+
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+details span {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25.67px;
+  transition-duration: 1s;
+  padding: 1rem;
+  color: var(--color-black);
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+}

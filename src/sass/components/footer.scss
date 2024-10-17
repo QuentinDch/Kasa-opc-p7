@@ -24,5 +24,12 @@
   @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 17.11px;
+    text-align: center;
+  }
+}
+
+.footer span {
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 }
