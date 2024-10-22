@@ -74,7 +74,6 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #c4c4c4;
   overflow: hidden;
 
   @media screen and (max-width: 767px) {
@@ -120,8 +119,9 @@
 .tags ul li {
   color: var(--color-white);
   background-color: var(--color-red);
-  width: 115px;
+  width: auto;
   height: 25px;
+  padding-inline: 1rem;
   @include flex-center;
   font-weight: bold;
   font-size: 14px;
@@ -129,7 +129,6 @@
   border-radius: 10px;
 
   @media screen and (max-width: 767px) {
-    width: 84px;
     height: 18px;
     font-size: 10px;
     line-height: 14.26px;
