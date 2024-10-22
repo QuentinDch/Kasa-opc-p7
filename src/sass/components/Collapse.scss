@@ -25,7 +25,7 @@ details summary {
 }
 
 details summary:hover {
-  background-color: darken($color: #ff6060, $amount: 2.5);
+  background-color: darken($color: #ff6060, $amount: 5);
 }
 
 details summary::after {

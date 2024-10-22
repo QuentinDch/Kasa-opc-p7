@@ -1,0 +1,138 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+  user-select: none;
+
+  @media screen and (max-width: 767px) {
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.title h1 {
+  color: var(--color-red);
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51.34px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 25.67px;
+  }
+}
+
+.title p {
+  font-size: 18px;
+  line-height: 25.67px;
+  font-weight: 500;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19.96px;
+  }
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  @media screen and (max-width: 767px) {
+    gap: 0.75rem;
+  }
+}
+
+.host p {
+  color: var(--color-red);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.67px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+}
+
+.host {
+  @media screen and (max-width: 767px) {
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
+
+.host span {
+  display: block;
+  text-align: end;
+}
+
+.host div {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.rate {
+  height: 36px;
+  width: 196px;
+  outline: 1px solid red;
+  @include flex-center;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    height: 18px;
+    width: 98px;
+    grid-row: 3;
+    grid-column: 1;
+    margin: auto 0;
+  }
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    grid-row: 2;
+  }
+}
+
+.tags ul {
+  display: flex;
+  gap: 1rem;
+
+  @media screen and (max-width: 767px) {
+    gap: 0.75rem;
+  }
+}
+
+.tags ul li {
+  color: var(--color-white);
+  background-color: var(--color-red);
+  width: 115px;
+  height: 25px;
+  @include flex-center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19.96px;
+  border-radius: 10px;
+
+  @media screen and (max-width: 767px) {
+    width: 84px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 14.26px;
+    border-radius: 5px;
+  }
+}
