@@ -50,9 +50,24 @@ details span {
   font-weight: 400;
   font-size: 18px;
   line-height: 25.67px;
-  transition-duration: 1s;
   padding: 1rem;
   color: var(--color-black);
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 17.11px;
+  }
+}
+
+details ul {
+  padding: 1rem;
+}
+
+details li {
+  font-weight: 400;
+  color: var(--color-black);
+  font-size: 18px;
+  line-height: 25.67px;
 
   @media screen and (max-width: 767px) {
     font-size: 12px;

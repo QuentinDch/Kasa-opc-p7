@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   user-select: none;
 
   @media screen and (max-width: 767px) {
     grid-template-rows: 1fr 1fr auto;
     grid-template-columns: 1fr;
     gap: 0;
+    margin-bottom: 0.75rem;
   }
 }
 

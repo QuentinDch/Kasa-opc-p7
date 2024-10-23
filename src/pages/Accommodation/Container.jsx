@@ -29,15 +29,16 @@ const Container = ({ accommodation }) => {
       </div>
       <div className="rate">
         {Array.from({ length: 5 }).map((_, index) => {
-          if (index < ratingNumber) {
+          const star = index + 1;
+          if (star <= ratingNumber) {
             return (
-              <span key={index}>
+              <span key={star}>
                 <img src={starActive} alt="Étoile pleine" />
               </span>
             );
           }
           return (
-            <span key={index}>
+            <span key={star}>
               <img src={starInactive} alt="Étoile vide" />
             </span>
           );
