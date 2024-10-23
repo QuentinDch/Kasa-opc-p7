@@ -85,11 +85,12 @@
 .rate {
   height: 36px;
   width: 196px;
-  outline: 1px solid red;
   @include flex-center;
+  gap: 1rem;
   margin-left: auto;
 
   @media screen and (max-width: 767px) {
+    gap: 0.5rem;
     height: 18px;
     width: 98px;
     grid-row: 3;

@@ -1,36 +1,63 @@
-import img from "../../assets/Background.png";
+import PropTypes from "prop-types";
+import starActive from "../../assets/star-active.svg";
+import starInactive from "../../assets/star-inactive.svg";
 
-const Container = () => {
+const Container = ({ accommodation }) => {
+  const { title, location, host, tags, rating } = accommodation;
+  const ratingNumber = Number(rating);
+
   return (
     <div className="container">
       <div className="title">
-        <h1>Cozy loft on the Canal Saint-Martin</h1>
-        <p>Paris, Île-de-France</p>
+        <h1>{title}</h1>
+        <p>{location}</p>
       </div>
       <div className="host">
         <p>
-          Alexandre <span>Dumas</span>
+          {host.name.split(" ")[0]} <span>{host.name.split(" ")[1]}</span>
         </p>
         <div>
-          <img src={img} alt="" />
+          <img src={host.picture} alt={host.name} />
         </div>
       </div>
       <div className="tags">
         <ul>
-          <li>Cozy</li>
-          <li>Canal</li>
-          <li>Paris 10</li>
+          {tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
         </ul>
       </div>
       <div className="rate">
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
+        {Array.from({ length: 5 }).map((_, index) => {
+          if (index < ratingNumber) {
+            return (
+              <span key={index}>
+                <img src={starActive} alt="Étoile pleine" />
+              </span>
+            );
+          }
+          return (
+            <span key={index}>
+              <img src={starInactive} alt="Étoile vide" />
+            </span>
+          );
+        })}
       </div>
     </div>
   );
+};
+
+Container.propTypes = {
+  accommodation: PropTypes.shape({
+    title: PropTypes.string,
+    location: PropTypes.string,
+    host: PropTypes.shape({
+      name: PropTypes.string,
+      picture: PropTypes.string,
+    }),
+    tags: PropTypes.arrayOf(PropTypes.string),
+    rating: PropTypes.string,
+  }),
 };
 
 export default Container;
