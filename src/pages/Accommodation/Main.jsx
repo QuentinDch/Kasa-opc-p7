@@ -10,9 +10,9 @@ const Main = () => {
 
   return (
     <main>
-      <Carousel />
+      <Carousel accommodation={accommodation} />
       <Container accommodation={accommodation} />
-      <Detail />
+      <Detail accommodation={accommodation} />
     </main>
   );
 };

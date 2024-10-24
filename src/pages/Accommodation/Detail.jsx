@@ -1,17 +1,22 @@
-import { useParams } from "react-router-dom";
-import data from "../../data/logements.json";
 import Collapse from "../../components/Collapse";
+import PropTypes from "prop-types";
 
-const Detail = () => {
-  const { id } = useParams();
-  const accommodation = data.find((item) => item.id === id);
+const Detail = ({ accommodation }) => {
+  const { description, equipments } = accommodation;
 
   return (
     <div className="detail">
-      <Collapse title="Description" content={accommodation.description} />
-      <Collapse title="Equipements" content={accommodation.equipments} />
+      <Collapse title="Description" content={description} />
+      <Collapse title="Equipements" content={equipments} />
     </div>
   );
+};
+
+Detail.propTypes = {
+  accommodation: PropTypes.shape({
+    description: PropTypes.string,
+    equipments: PropTypes.string,
+  }),
 };
 
 export default Detail;
