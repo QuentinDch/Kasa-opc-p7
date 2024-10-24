@@ -15,7 +15,7 @@ const Detail = ({ accommodation }) => {
 Detail.propTypes = {
   accommodation: PropTypes.shape({
     description: PropTypes.string,
-    equipments: PropTypes.string,
+    equipments: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 
