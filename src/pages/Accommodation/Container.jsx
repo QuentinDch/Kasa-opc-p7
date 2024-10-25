@@ -23,7 +23,8 @@ const Container = ({ accommodation }) => {
       <div className="tags">
         <ul>
           {tags.map((tag) => (
-            <li key={tag}>{tag}</li>
+            <li key={`${accommodation.id}-${tag}`}>{tag}</li>
+            // La clé est une chaîne composée de l’id et du tag
           ))}
         </ul>
       </div>
@@ -50,6 +51,7 @@ const Container = ({ accommodation }) => {
 
 Container.propTypes = {
   accommodation: PropTypes.shape({
+    id: PropTypes.string,
     title: PropTypes.string,
     location: PropTypes.string,
     host: PropTypes.shape({
