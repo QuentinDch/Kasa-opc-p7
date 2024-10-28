@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -9,6 +10,10 @@ const Layout = ({ children }) => {
       <Footer />
     </>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Layout;

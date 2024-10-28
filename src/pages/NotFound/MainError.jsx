@@ -5,7 +5,7 @@ const MainError = () => {
     <main className="main-error">
       <h1>404</h1>
       <h2>
-        Oups! La page que <span>vous demandez n'existe pas.</span>{" "}
+        Oups! La page que <span>vous demandez n&apos;existe pas</span>
       </h2>
       <Link to="/">Retourner sur la page d’accueil</Link>
     </main>
