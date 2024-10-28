@@ -1,4 +1,5 @@
 {
+  "homepage": "https://QuentinDch.github.io/Kasa-opc-p7",
   "name": "kasa-opc-p7",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
@@ -25,6 +27,7 @@
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.12",
+    "gh-pages": "^6.2.0",
     "globals": "^15.9.0",
     "sass": "^1.79.5",
     "vite": "^5.4.9"
