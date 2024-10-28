@@ -2,7 +2,7 @@
 
 septième projet du parcours **"Intégrateur web"** chez OpenClassroom. <br> L'objectif est de créez une application web avec React.
 
-![Image de présentation du projet](https://github.com/user-attachments/assets/présentation)
+![Image de présentation du projet](https://github.com/user-attachments/assets/18c49f68-7855-45fa-9060-a4042ad7c581)
 
 ## Objectifs du Projet
 
