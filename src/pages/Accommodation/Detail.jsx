@@ -7,7 +7,7 @@ const Detail = ({ accommodation }) => {
   return (
     <div className="detail">
       <Collapse title="Description" content={description} />
-      <Collapse title="Equipements" content={equipments} />
+      <Collapse title="Équipements" content={equipments} />
     </div>
   );
 };
