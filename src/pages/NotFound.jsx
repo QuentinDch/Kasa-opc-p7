@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const MainError = () => {
+const NotFound = () => {
   return (
     <main className="main-error">
       <h1>404</h1>
@@ -12,4 +12,4 @@ const MainError = () => {
   );
 };
 
-export default MainError;
+export default NotFound;

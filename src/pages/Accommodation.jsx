@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import Carousel from "./Carousel";
-import Container from "./Container";
-import Detail from "./Detail";
-import data from "../../data/logements.json";
+import Carousel from "../components/Carousel";
+import Container from "../components/Container";
+import Detail from "../components/Detail";
+import data from "../data/logements.json";
 
-const Main = () => {
+const Accommodation = () => {
   const { id } = useParams();
   const accommodation = data.find((item) => item.id === id);
 
@@ -17,4 +17,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Accommodation;

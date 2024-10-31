@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import starActive from "../../assets/star-active.svg";
-import starInactive from "../../assets/star-inactive.svg";
+import starActive from "../assets/star-active.svg";
+import starInactive from "../assets/star-inactive.svg";
 
 const Container = ({ accommodation }) => {
   const { title, location, host, tags, rating } = accommodation;

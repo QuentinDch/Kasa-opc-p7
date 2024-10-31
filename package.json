@@ -1,5 +1,4 @@
 {
-  "homepage": "https://QuentinDch.github.io/Kasa-opc-p7",
   "name": "kasa-opc-p7",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "prop-types": "^15.8.1",

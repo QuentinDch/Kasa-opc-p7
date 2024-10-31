@@ -1,4 +1,4 @@
-import Collapse from "../../components/Collapse";
+import Collapse from "./Collapse";
 import PropTypes from "prop-types";
 
 const Detail = ({ accommodation }) => {
