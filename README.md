@@ -18,7 +18,3 @@ septième projet du parcours **"Intégrateur web"** chez OpenClassroom. <br> L'o
 - SASS
 - Node.js
 - JSON
-
-## Lien du Site
-
-Vous pouvez visiter le site [Kasa](https://quentindch.github.io/Kasa-opc-p7/) pour voir le résultat final.
