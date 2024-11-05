@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import prevBtn from "../assets/prev-btn.svg";
 import nextBtn from "../assets/next-btn.svg";
-import PropTypes from "prop-types";
 import { useState } from "react";
 
 const Carousel = ({ accommodation }) => {

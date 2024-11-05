@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Card = ({ id, cover, title }) => {
   return (
@@ -9,7 +9,7 @@ const Card = ({ id, cover, title }) => {
         aria-label={`Voir les détails de ${title}`}
       >
         <figure className="card-figure">
-          <img src={cover} alt={title} loading="lazy" />
+          <img src={cover} alt={title} />
           <figcaption>{title}</figcaption>
         </figure>
       </Link>

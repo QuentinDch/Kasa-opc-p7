@@ -1,5 +1,5 @@
-import Collapse from "./Collapse";
 import PropTypes from "prop-types";
+import Collapse from "./Collapse";
 
 const Detail = ({ accommodation }) => {
   const { description, equipments } = accommodation;
