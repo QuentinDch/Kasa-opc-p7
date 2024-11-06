@@ -7,7 +7,7 @@ import data from "../data/logements.json";
 
 const Accommodation = () => {
   const { id } = useParams();
-  const accommodation = data.find((item) => item.id === id);
+  const accommodation = data.find((logement) => logement.id === id);
 
   if (!accommodation) {
     return <NotFound />;
