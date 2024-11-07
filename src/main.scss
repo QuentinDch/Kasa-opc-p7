@@ -1,21 +1,21 @@
-@import "./sass/globals/mixins.scss";
-@import "./sass/globals/reset.scss";
-@import "./sass/globals/utilities.scss";
-@import "./sass/globals/variables.scss";
+@use "./sass/globals/mixins" as *;
+@use "./sass/globals/reset";
+@use "./sass/globals/utilities";
+@use "./sass/globals/variables";
 
-@import "./sass/components/Banner.scss";
-@import "./sass/components/Footer.scss";
-@import "./sass/components/Navbar.scss";
-@import "./sass/components/Main.scss";
-@import "./sass/components/Collapse.scss";
+@use "./sass/components/Banner";
+@use "./sass/components/Footer";
+@use "./sass/components/Navbar";
+@use "./sass/components/Main";
+@use "./sass/components/Collapse";
 
-@import "./sass/pages/Home/Card.scss";
-@import "./sass/pages/Home/Display.scss";
+@use "./sass/pages/Home/Card";
+@use "./sass/pages/Home/Display" as HomeDisplay;
 
-@import "./sass/pages/About/Display.scss";
+@use "./sass/pages/About/Display" as AboutDisplay;
 
-@import "./sass/pages/NotFound/MainError.scss";
+@use "./sass/pages/NotFound/MainError";
 
-@import "./sass/pages/Accommodation/Carousel.scss";
-@import "./sass/pages/Accommodation/Container.scss";
-@import "./sass/pages/Accommodation/Detail.scss";
+@use "./sass/pages/Accommodation/Carousel";
+@use "./sass/pages/Accommodation/Container";
+@use "./sass/pages/Accommodation/Detail";

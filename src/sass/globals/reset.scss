@@ -1,5 +1,5 @@
 // RESET =================================
-@import "./variables.scss";
+@use "./variables" as *;
 
 *,
 *::before,

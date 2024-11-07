@@ -1,4 +1,4 @@
-@import "../globals/mixins.scss";
+@use "../globals/mixins" as *;
 
 .banner {
   border-radius: 25px;
